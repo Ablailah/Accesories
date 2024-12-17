@@ -1,0 +1,456 @@
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    #header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    left:0;
+    top: 0;
+    z-index:100;
+    }
+    
+    #nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    }
+    
+    .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    }
+    
+    #header-img {
+    color: #fff;
+    float:right;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    visibility:visible;
+    }
+    
+    header h1 {
+    margin-bottom: 10px;
+    color:#fff;
+    }
+    
+    header nav ul li {
+    margin-right: 15px;
+    }
+    
+    header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    }
+    section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    section h2 {
+        text-align:center;
+        
+    }
+    
+    h2 {
+    margin-top: 20px;
+    }
+
+ .images-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        padding: 2rem;
+        background: #fff;
+    }
+    
+ .images-grid-img {
+        width: 25px;
+        height: 200px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    
+    button:hover {
+    background-color: #555;
+    }
+    .about{
+        display: inline;
+        margin: 0;
+    }
+    
+    
+    /* Split container */
+    .split-container {
+        display: flex;  /* This creates a flexible container */
+        height: 100vh;  /* Full height of the viewport */
+    }
+    
+    /* Left side: Image */
+    .split-left {
+        flex: 1;  /* This takes up 50% of the screen */
+        overflow: hidden;  /* Prevents overflow */
+    }
+    
+    .split-image {
+        width: 100%;  /* Make the image cover the container */
+        height: 100%;  /* Ensure the image stretches to fill the space */
+        object-fit: cover;  /* Keep the aspect ratio intact and crop if necessary */
+    }
+    
+    /* Right side: Text */
+    .split-right {
+        flex: 1;  /* Takes the remaining 50% */
+        padding: 20px;
+        overflow-y: auto;  /* Enables scrolling if content overflows */
+    }
+    
+    /* Styling for paragraphs */
+    .split-right h2 {
+        margin-bottom: 20px;
+    }
+    
+    .split-right p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+    
+    
+    
+    form div {
+    margin-bottom: 15px;
+    }
+    
+    form label {
+    font-weight: bold;
+    }
+    
+    form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    
+    form button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    footer p {
+    margin-top: 10px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    header nav ul {
+    flex-direction: column;
+    padding: 0;
+    }
+    
+    header nav ul li {
+    margin-bottom: 10px;
+    }
+    
+    section {
+    margin: 10px;
+    }
+    
+    img {
+    width: 100%;
+    height: auto;
+    }
+    
+    button {
+    width: 100%;
+    margin: 10px 0;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    header h1 {
+    font-size: 1.5rem;
+    }
+    
+    header img {
+    width: 100px;
+    height: 100px;
+    }
+    
+    footer {
+    font-size: 0.9rem;
+    }
+    }
+
+/* Basic reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#header {
+background-color: #333;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position:sticky;
+left:0;
+top: 0;
+z-index:100;
+}
+
+#nav-bar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+.nav-link {
+color: #fff;
+text-decoration: none;
+margin-right: 20px;
+}
+
+#header-img {
+color: #fff;
+float:right;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+visibility:visible;
+}
+
+header h1 {
+margin-bottom: 10px;
+color:#fff;
+}
+
+header nav ul li {
+margin-right: 15px;
+}
+
+header nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+}
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f4f4;
+color: #333;
+}
+section {
+padding: 20px;
+margin: 20px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align:center;
+    
+}
+
+h2 {
+margin-top: 20px;
+}
+.images{
+    padding: 1px;
+    display:flex;
+    width:25px;
+    height:150px;
+}
+
+figcaption {
+text-align: center;
+font-style: italic;
+margin-top: 10px;
+}
+
+button {
+display: block;
+width: 200px;
+margin: 10px auto;
+padding: 10px;
+background-color: #333;
+color: #fff;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+button:hover {
+background-color: #555;
+}
+.about{
+    display: inline;
+    margin: 0;
+}
+
+
+/* Split container */
+.split-container {
+    display: flex;  /* This creates a flexible container */
+    height: 100vh;  /* Full height of the viewport */
+}
+
+/* Left side: Image */
+.split-left {
+    flex: 1;  /* This takes up 50% of the screen */
+    overflow: hidden;  /* Prevents overflow */
+}
+
+.split-image {
+    width: 100%;  /* Make the image cover the container */
+    height: 100%;  /* Ensure the image stretches to fill the space */
+    object-fit: cover;  /* Keep the aspect ratio intact and crop if necessary */
+}
+
+/* Right side: Text */
+.split-right {
+    flex: 1;  /* Takes the remaining 50% */
+    padding: 20px;
+    overflow-y: auto;  /* Enables scrolling if content overflows */
+}
+
+/* Styling for paragraphs */
+.split-right h2 {
+    margin-bottom: 20px;
+}
+
+.split-right p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+
+form div {
+margin-bottom: 15px;
+}
+
+form label {
+font-weight: bold;
+}
+
+form input, form textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+form button {
+width: auto;
+padding: 10px 20px;
+background-color: #333;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+header nav ul {
+flex-direction: column;
+padding: 0;
+}
+
+header nav ul li {
+margin-bottom: 10px;
+}
+
+section {
+margin: 10px;
+}
+
+img {
+width: 100%;
+height: auto;
+}
+
+button {
+width: 100%;
+margin: 10px 0;
+}
+}
+
+@media (max-width: 480px) {
+header h1 {
+font-size: 1.5rem;
+}
+
+header img {
+width: 100px;
+height: 100px;
+}
+
+footer {
+font-size: 0.9rem;
+}
+}
