@@ -187,3 +187,69 @@ footer {
 footer address {
     font-style: normal;
 }
+
+/* Media Queries */
+
+/* For tablets and below */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-left,
+    .split-right {
+        min-width: 100%;
+    }
+
+    form {
+        width: 90%;
+        margin: 20px;
+    }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .images-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-left,
+    .split-right {
+        min-width: 100%;
+    }
+
+    form {
+        width: 100%;
+        margin: 20px;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
